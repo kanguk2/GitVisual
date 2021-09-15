@@ -13,6 +13,7 @@ namespace SearchAlgorithm
 	/// 선형 검색 알고리즘. 템플릿 사용하여 다양한 변수 사용되도록 코드 구성
     /// template 의 선언은 header와 같은 코드 내에 선언되어야함.
     /// 그렇지 않을 경우 Link Error를 반환
+    /// 처음부터 시작하여 배열 크기까지 검색하여 찾고자 하는 값을 검색한다.
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	/// <param name="Arr">데이터들</param>
@@ -38,6 +39,8 @@ namespace SearchAlgorithm
 
     /// <summary>
     /// 이진 검색 알고리즘. 템플릿 사용하여 다양한 변수 사용되도록 코드수정
+    /// 이진 검색 알고리즘은 정렬이 되어있어야함
+    /// 배열의 중간에 있는 값과 비교하여 중간값이 찾으려는 값보다 크면 왼쪽 작으면 오른쪽을 검색하며 찾아간다.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="Arr"></param>

@@ -11,10 +11,12 @@ int main(void)
 	SearchAlgorithm::TLinear_SearchAlgorithm(nArr, nFixedNum, 19);
 	SearchAlgorithm::TLinear_SearchAlgorithm(dArr, nFixedNum, 2.1);
 
-	SortAlgorithm::intBubble_SortAlgorithm(nArr, nFixedNum);
+//	SortAlgorithm::intBubble_SortAlgorithm(nArr, nFixedNum);
+	SortAlgorithm::intSelection_SortAlgorithm(nArr, nFixedNum);
 	SearchAlgorithm::intBinary_SearchAlgorithm(nArr, nFixedNum, 66);
 
-	SortAlgorithm::TBubble_SortAlgorithm(dArr, nFixedNum);
+//	SortAlgorithm::TBubble_SortAlgorithm(dArr, nFixedNum);
+	SortAlgorithm::TSelection_SortAlgorithm(dArr, nFixedNum);
 	SearchAlgorithm::TBinary_SearchAlgorithm(dArr, nFixedNum, 7.3);
 
 	return 0;
