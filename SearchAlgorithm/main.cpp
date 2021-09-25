@@ -2,6 +2,16 @@
 #include "SearchAlgorithm.h"
 #include "SortAlgorithm.h"
 
+
+template<typename T>
+void ArrayPrint(T* Arr, int nSize)
+{
+	printf("\n Sorted Array \n");
+	for(int i = 0 ; i < nSize ; i++)
+		std::cout << "Arr[" << i << "] = " << Arr[i] << " ";
+	std::cout << std::endl;
+}
+
 int main(void)
 {
 	const int nFixedNum = 10;
@@ -12,12 +22,17 @@ int main(void)
 	SearchAlgorithm::TLinear_SearchAlgorithm(dArr, nFixedNum, 2.1);
 
 //	SortAlgorithm::intBubble_SortAlgorithm(nArr, nFixedNum);
-	SortAlgorithm::intSelection_SortAlgorithm(nArr, nFixedNum);
+//	SortAlgorithm::intSelection_SortAlgorithm(nArr, nFixedNum);
+	SortAlgorithm::intMergeSort_SortAlgorithm(nArr, 0, nFixedNum-1);
+	ArrayPrint(nArr, nFixedNum);
 	SearchAlgorithm::intBinary_SearchAlgorithm(nArr, nFixedNum, 66);
 
 //	SortAlgorithm::TBubble_SortAlgorithm(dArr, nFixedNum);
-	SortAlgorithm::TSelection_SortAlgorithm(dArr, nFixedNum);
+//	SortAlgorithm::TSelection_SortAlgorithm(dArr, nFixedNum);
+	SortAlgorithm::TMergeSort_SortAlgorithm(dArr, 0, nFixedNum - 1);
+	ArrayPrint(dArr, nFixedNum);
 	SearchAlgorithm::TBinary_SearchAlgorithm(dArr, nFixedNum, 7.3);
 
 	return 0;
 }
+

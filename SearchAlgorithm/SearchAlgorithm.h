@@ -75,6 +75,7 @@ namespace SearchAlgorithm
         return NotExist;
     }
 
+    // 기본적인 바이너리 검색 알고리즘 정수형
     ErrorCode intBinary_SearchAlgorithm(int nArr[], int nCount, int nVal);
     // 기본적인 선형 검색 알고리즘 정수형
 	ErrorCode intLinear_SearchAlgorithm(int nArr[], int nCount, int nVal);
